@@ -41,15 +41,15 @@
                         >;
                 };
                 raise_layer {
-// -------------------------------------------------------------       --------------------------------------
-// |  TAB       |  !        |  @       |  #     |  $     |  %  |       |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL & ESC |  C_VOL_DN | C_VOL_UP | C_MUTE |        |     |       |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT       |  C_PLAY   | C_PAUSE  | C_PREV | C_NEXT |     |       |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                                     | ALT    |        | GUI |       | SPC |     | ALT |
+// ----------------------------------------------------------------       --------------------------------------
+// |  TAB       |  !        |  @       |  #     |  $     |  %     |       |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL & ESC |  C_VOL_DN | C_VOL_UP | C_MUTE | C_PREV | C_NEXT |       |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT       |           |          |        |        |        |       |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                                     | ALT    |        | GUI    |       | SPC |     | ALT |
                         bindings = <
    &kp TAB       &kp EXCL     &kp AT       &kp HASH   &kp DLLR   &kp PRCNT          &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &mt LCTRL ESC &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans     &trans             &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT     &kp C_PLAY   &kp C_PAUSE  &kp C_PREV &kp C_NEXT &trans             &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &mt LCTRL ESC &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp C_PREV &kp C_NEXT         &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT     &trans       &trans       &trans     &trans     &trans             &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	                   &kp LALT   &trans     &kp LGUI           &kp SPC   &trans    &kp RALT
                         >;
                 };
